@@ -2,9 +2,63 @@
 <html>
   <head>
     <title>Pendulum Simulation</title>
+    <style>
+      body{
+        background-color:#0d0d0d;
+        color: #ooffc3;
+        text-align: center;
+        font-family: 'Courier New', monospace;
+      }
+      canvas{
+        background-color: #1a1a1a;
+        margin-top: 30px;
+        border: 2px solid #00ffc3;
+      } 
+    </style>
   </head>
   <body>
-    <h1>Pendulum Page</h1>
-    <p>Here will be a pendulum simulation.</p>
+    <h1>Pendulum Simulation</h1>
+    <canvas id="canvas" width="400" height="400"></canvas>
+
+    <script>
+      const canvas = document.getElementById("canvas");
+      const ctx = canvas.getContext("2d");
+
+      let angle = Math.PI/4;
+      let angleVel = 0;
+      let angleAcc = 0;
+      let gravity = 0.4;
+      const origin = {x: 200, y:50};
+      const length = 200;
+
+      function draw(){
+        ctx.clearRect(0,0,canvas.width, canvas.height);
+
+        angleAcc = (-gravity/length)*Math.sin(angle);
+        angleVel += angleAcc;
+        angleVel *= 0.99; //damping
+        angle += angleVel;
+
+        const bobX = origin.x + length*Math.sin(angle);
+        const BobY = origin.y + length*Math.cos(angle);
+
+        //draw line
+        ctx.beginPath();
+        ctx.moveTo(origin.x, origin.y);
+        ctx.lineTo(bobX, bobY);
+        ctx.strokeStyle = "#00ffc3";
+        ctx.lineWidth = 2;
+        ctx.stroke();
+
+        //draw bob
+        ctx.beginPath();
+        ctx.arc(bobX, bobY, 20, 0, 2*Math.PI);
+        ctx.fillStyle = "#00ffc3";
+        ctx.fill();
+
+        requestAnimationFrame(draw);
+      }
+      draw();
+    </script>
   </body>
 </html>
