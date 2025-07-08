@@ -2,7 +2,7 @@ body{
   margin: 0;
   background-color: #0d0d0d;
   color: #00ffc3;
-  font-family: 'Courier New', monospaced;
+  font-family: 'Courier New', monospace;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -26,6 +26,8 @@ body{
   transition: background-color 0.3s;
 }
 
-.button:hover{
-  background-color: #00ffc3;
+.button:hover {
+  background-color: #00b395;
+  color: #ffffff;
 }
+
