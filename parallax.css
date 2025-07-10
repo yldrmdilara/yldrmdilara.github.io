@@ -22,11 +22,11 @@ body, html {
   will-change: transform;
 
   .bg{
-     background-image: url('bg-stars.png'); /* ← yıldızlı uzay arka planı */
+     background-image: url('bg-stars.jpg'); /* ← yıldızlı uzay arka planı */
     z-index: 1;
   }
   .mid {
-    background-image: url('mid-clouds.png'); /* ← bulut, meteor vs. */
+    background-image: url('mid-clouds.jpg'); /* ← bulut, meteor vs. */
     z-index: 2;
   }
   .fg {
