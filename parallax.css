@@ -2,7 +2,7 @@ body, html {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  font-family: 'Press Start 2P', monospaced;
+  font-family: 'Press Start 2P', monospace;
   bacground-color: #0d0d0d;
 }
 
