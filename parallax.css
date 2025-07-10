@@ -1,0 +1,56 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: 'Press Start 2P', monospace;
+  bacground-color: #0d0d0d;
+}
+
+.scene {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.layer{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  will-change: transform;
+
+  .bg{
+     background-image: url('bg-stars.png'); /* ← yıldızlı uzay arka planı */
+    z-index: 1;
+  }
+  .mid {
+    background-image: url('mid-clouds.png'); /* ← bulut, meteor vs. */
+    z-index: 2;
+  }
+  .fg {
+    background-image: url('fg-ship.png'); /* ← gemi, karakterler */
+    z-index: 3;
+  }
+  .content {
+      position: relative;
+      z-index: 4;
+      color: white;
+      text-align: center;
+      top: 35%;
+    }
+
+  .start-btn {
+    background: #00ffc3;
+    color: #0d0d0d;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    margin-top: 20px;
+    box-shadow: 0 0 10px #00ffc3;
+    cursor: pointer;
+  }
+      
+  
