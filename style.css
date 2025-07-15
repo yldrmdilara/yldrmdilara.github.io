@@ -4,8 +4,6 @@ body{
   color: #00ffc3;
   font-family: 'Courier New', monospace;
   display: flex;
-  align-items: center;
-  justify-content: center;
   height: 100vh;
   padding-top: 60px;
 }
