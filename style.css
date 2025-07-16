@@ -12,6 +12,8 @@ body{
   text-align: center;
   max-width: 600px;
   padding: 20px;
+  margin: 0 auto;
+  display: block;
 }
 
 .navbar{
