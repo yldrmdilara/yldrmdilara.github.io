@@ -1,41 +1,44 @@
 body{
   margin: 0;
-  background-color: #261666;
+  background: linear-gradient(to bottom, #fdfbfb, #ebedee);
   color: #00ffc3;
-  font-family: 'Courier New', monospace;
+  font-family: 'Inter', sans-serif;
   display: flex;
   height: 100vh;
   padding-top: 60px;
 }
 
 .container {
-  max-width: 800px;
-  margin: 100px auto;
   text-align: center;
-  font-family: 'Segoe UI', sans-serif;
+  padding: 80px 20px;
+  max-width: 700px;
+  margin: auto;
+}
+h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+p {
+  font-size: 1.2em;
+  line-height: 1.6;
 }
 
-.navbar{
-  width: 100%;
-  background-color: #1a1a1a;
-  padding: 10px 20px;
-  position: fixed;
-  top: 0;
-  left: 0;
+.navbar {
   display: flex;
   justify-content: center;
-  gap: 20px;
-  z-index: 999;
-  box-shadow: 0 2px 10px #00ffc3;
+  gap: 30px;
+  padding: 20px;
+  background-color: #ffffffcc;
+  backdrop-filter: blur(8px);
+  position: sticky;
+  top: 0;
 }
-
 .navbar a {
-  color: #00ffc3;
   text-decoration: none;
   font-weight: bold;
-  font-size: 18px;
-  transition: coloe 0.3s;
+  color: #333;
 }
+
 
 .navbar a:hover {
   color: white;
@@ -50,17 +53,15 @@ body{
 }
 
 .sim-card {
-  background-color: #1a1a1a;
-  border: 2px solid #00ffc3;
-  border-radius: 12px;
+  background: white;
   padding: 20px;
-  width: 250px;
-  text-align: center;
-  transition: transform 0.3s, box-shadow 0.3s;
+  margin: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+.sim-card:hover {
+  transform: scale(1.03);
 }
 
-.sim-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 0 15px #00ffc3;
-}
 
