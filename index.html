@@ -16,8 +16,7 @@
         <a href="#">Optics</a>
       </div>
     </nav>
-
-
+  
     <div class="container">
       <h1>Hello, I am Dilara!</h1>
       <p>I am a physics engineering student interested in quantum physics, optics, and simulations.</p>
@@ -37,5 +36,13 @@
         </div>
       </div>
     </div>
+    <script>
+      const toggle = document.querySelector('.menu-toggle');
+      const navbar = document.querySelector('.navbar');
+
+      toggle.addEventListener('click', () => {
+        navbar.classList.toggle('active');
+      });
+    </script>
   </body>
 </html>
