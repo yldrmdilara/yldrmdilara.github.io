@@ -1,11 +1,11 @@
 body{
   margin: 0;
   background: linear-gradient(to bottom, #fdfbfb, #ebedee);
-  color: #00ffc3;
+  color: #000000;
   font-family: 'Inter', sans-serif;
   display: flex;
   height: 100vh;
-  padding-top: 60px;
+  padding-top: 30px;
 }
 
 .container {
@@ -70,6 +70,30 @@ p {
 }
 .sim-card:hover {
   transform: scale(1.03);
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 40px 10px;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar .menu {
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar .menu a {
+    padding: 10px 0;
+  }
 }
 
 
