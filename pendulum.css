@@ -1,0 +1,9 @@
+body{
+  margin: 0;
+  background: linear-gradient(to bottom, #fdfbfb, #ebedee);
+  color: #000000;
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  height: 100vh;
+  padding-top: 30px;
+}
