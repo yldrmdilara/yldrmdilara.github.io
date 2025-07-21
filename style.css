@@ -53,6 +53,10 @@ p {
   background: none;
   border: none;
   cursor: pointer;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 1001;
 }
 
 .card-container{
