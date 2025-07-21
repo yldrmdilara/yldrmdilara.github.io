@@ -23,17 +23,18 @@ p {
   line-height: 1.6;
 }
 
-.navbar{
+.sidebar{
   position: fixed;
   top: 0;
-  left: 0;
-  width: 100%;
+  left: -200px;
+  width: 200px;
+  height: 100%;
   background-color: white;
-  z-index: 999;
-  padding: 10px 20px;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+  padding: 20px;
+  transition: left 0.3s ease;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
 }
   
 .navbar .menu {
@@ -42,11 +43,8 @@ p {
   align-items: flex-start;
 }
 
-.navbar.active .menu {
-  display: flex;
-  text-align: left;
-  width:100%;
-  padding: 10px 20px;
+.sidebar.active{
+  left: 0;
 }
 
 .menu-toggle {
