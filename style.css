@@ -54,8 +54,6 @@ p {
   border: none;
   cursor: pointer;
   position: fixed;
-  top: 10px;
-  left: 10px;
 }
 
 .card-container{
