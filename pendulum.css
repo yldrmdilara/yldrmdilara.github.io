@@ -7,4 +7,5 @@ body {
   font-family: 'Inter', sans-serif;
   background: linear-gradient(to bottom, #fdfbfb, #ebedee);
   color: #000;
+  transition: background 0.3s, color 0.3s;
 }
