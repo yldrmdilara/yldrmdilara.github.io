@@ -5,7 +5,6 @@ body{
   font-family: 'Inter', sans-serif;
   display: flex;
   height: 100vh;
-  padding-top: 30px;
 }
 
 .container {
@@ -53,6 +52,10 @@ p {
   background: none;
   border: none;
   cursor: pointer;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 1100;
 }
 
 .card-container{
