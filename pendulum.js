@@ -8,7 +8,7 @@ let animationId;
 let isRunning = false;
 
 function startSimulation() {
-  const button = document.querySelector('button[onclick="startSimulation()"]');
+  const button = document.getElementById("startButton");
 
   if (isRunning) {
     cancelAnimationFrame(animationId);
