@@ -5,8 +5,17 @@ let angle, angleVel = 0, angleAcc = 0, length, gravity = 0.4;
 const origin = { x: 200, y: 50 };
 let animationId;
 
+let isRunning = false;
+
 function startSimulation() {
-  if (animationId) cancelAnimationFrame(animationId);
+  const button = document.querySelector('button[onclick="startSimulation()"]');
+
+  if (isRunning) {
+    cancelAnimationFrame(animationId);
+    isRunning = false;
+    button.textContent = "Start";
+    return;
+  }
 
   const lengthVal = parseFloat(document.getElementById("lengthInput").value);
   const angleDeg = parseFloat(document.getElementById("angleInput").value);
@@ -15,6 +24,8 @@ function startSimulation() {
   angle = angleDeg * Math.PI / 180;
   angleVel = 0;
 
+  isRunning = true;
+  button.textContent = "Stop";
   draw();
 }
 
