@@ -57,10 +57,4 @@ function draw() {
   animationId = requestAnimationFrame(draw);
     
 }
- document.getElementById('darkModeToggle').addEventListener('click', () => {
-    document.body.classList.toggle('dark-mode');
-    const btn=document.getElementById('darkModeToggle');
-    btn.textContent= document.body.classList.contains('dark-mode')
-      ? '☀️ Light Mode' 
-      : '🌙 Dark Mode';
-  });
+
