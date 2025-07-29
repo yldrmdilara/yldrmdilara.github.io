@@ -78,6 +78,19 @@ p {
   transform: scale(1.03);
 }
 
+#darkModeToggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 9999;
+  padding: 8px 12px;
+  font-size: 18px;
+  border: none;
+  background-color: transparent;
+  color: inherit;
+  cursor: pointer;
+}
+
 @media (max-width: 768px) {
   .container {
     padding: 40px 10px;
