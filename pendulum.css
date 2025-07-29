@@ -40,6 +40,32 @@ canvas {
   color: inherit;
   cursor: pointer;
 }
+.sim-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  font-size: 16px;
+}
+
+.controls label {
+  display: flex;
+  flex-direction: column;
+  color: inherit;
+}
+
+.controls input[type="range"] {
+  width: 200px;
+}
+
 
 
 
