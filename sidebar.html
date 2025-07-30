@@ -1,0 +1,19 @@
+  <nav class="sidebar">
+      <div>
+       <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="pendulum.html">Pendulum</a></li>
+          <li><a href="#">Wave</a></li>
+          <li><a href="#">Optics</a></li>
+      </ul>
+      </div>
+    </nav>
+
+       <script>
+      const toggle = document.querySelector('.menu-toggle');
+      const sidebar = document.querySelector('.sidebar');
+
+      toggle.addEventListener('click', () => {
+        sidebar.classList.toggle('active');
+      });
+    </script>
