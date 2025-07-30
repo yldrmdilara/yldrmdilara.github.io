@@ -98,6 +98,9 @@ canvas {
   left: 10px;
   z-index: 1100;
 }
+h1 {
+   text-align: center;
+ }
 
 
 
