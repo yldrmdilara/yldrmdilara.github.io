@@ -9,12 +9,12 @@ body{
 
 body.dark-mode {
   background: linear-gradient(to bottom, #1a1a1a, #0d0d0d);
-  color: #00ffc3;
+  color: #525252;
 }
 
 body.dark-mode canvas {
   background-color: #222;
-  border-color: #00ffc3;
+  border-color: #525252;
 }
 canvas {
   width: 100%;
@@ -23,7 +23,7 @@ canvas {
   aspect-ratio: 1 / 1;
   margin: 20px auto;
   background-color: #1a1a1a;
-  border: 2px solid #00ffc3;
+  border: 2px solid #525252;
 }
 
 #darkModeToggle {
@@ -41,7 +41,7 @@ canvas {
 .sim-container {
   display: flex;
   align-items: flex-start;
-  gap: 8px;
+  gap: 2px;
   margin-top: 40px;
   flex-wrap: wrap;
 }
@@ -49,8 +49,8 @@ canvas {
 .controls {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  font-size: 10px;
+  gap: 3px;
+  font-size: 15px;
 }
 
 .controls label {
