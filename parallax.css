@@ -53,5 +53,8 @@ body, html {
     box-shadow: 0 0 10px #00ffc3;
     cursor: pointer;
   }
+ h1 {
+   text-align: center;
+ }
       
   
