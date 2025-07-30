@@ -26,7 +26,18 @@
 </head>
 <body>
   <h1>Pendulum Simulation</h1>
-
+  
+  <nav class="sidebar">
+      <div>
+       <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="pendulum.html">Pendulum</a></li>
+          <li><a href="#">Wave</a></li>
+          <li><a href="#">Optics</a></li>
+      </ul>
+      </div>
+    </nav>
+  
   <div class="sim-container">
   <canvas id="pendulumCanvas" width="400" height="400"></canvas>
 
@@ -42,6 +53,14 @@
     <button id="startButton">Start</button>
   </div>
 </div>
+   <script>
+      const toggle = document.querySelector('.menu-toggle');
+      const sidebar = document.querySelector('.sidebar');
+
+      toggle.addEventListener('click', () => {
+        sidebar.classList.toggle('active');
+      });
+    </script>
 
   <script src="pendulum.js"></script>
   <script src="darkmode.js"></script>
