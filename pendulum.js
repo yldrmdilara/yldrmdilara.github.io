@@ -39,19 +39,17 @@ function draw() {
 
   const bobX = origin.x + length * Math.sin(angle);
   const bobY = origin.y + length * Math.cos(angle);
-
-  // draw line
+ 
   ctx.beginPath();
   ctx.moveTo(origin.x, origin.y);
   ctx.lineTo(bobX, bobY);
-  ctx.strokeStyle = #fdfbfb;
+  ctx.strokeStyle = #000000;
   ctx.lineWidth = 2;
   ctx.stroke();
 
-  // draw bob
   ctx.beginPath();
   ctx.arc(bobX, bobY, 20, 0, 2 * Math.PI);
-  ctx.fillStyle = "#fdfbfb";
+  ctx.fillStyle = #000000;
   ctx.fill();
 
   animationId = requestAnimationFrame(draw);
