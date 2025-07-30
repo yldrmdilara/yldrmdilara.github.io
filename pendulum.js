@@ -44,7 +44,7 @@ function draw() {
   ctx.beginPath();
   ctx.moveTo(origin.x, origin.y);
   ctx.lineTo(bobX, bobY);
-  ctx.strokeStyle = "#00ffc3";
+  ctx.strokeStyle = #fdfbfb;
   ctx.lineWidth = 2;
   ctx.stroke();
 
