@@ -42,9 +42,8 @@ canvas {
 }
 .sim-container {
   display: flex;
-  justify-content: center;
   align-items: flex-start;
-  gap: 20px;
+  gap: 8px;
   margin-top: 40px;
   flex-wrap: wrap;
 }
