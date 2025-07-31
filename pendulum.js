@@ -61,13 +61,13 @@ function draw() {
   ctx.beginPath();
   ctx.moveTo(origin.x, origin.y);
   ctx.lineTo(bobX, bobY);
-  ctx.strokeStyle = "#000000";
+  ctx.strokeStyle = "#00ffc3";
   ctx.lineWidth = 2;
   ctx.stroke();
 
   ctx.beginPath();
   ctx.arc(bobX, bobY, 20, 0, 2 * Math.PI);
-  ctx.fillStyle = "#000000";
+  ctx.fillStyle = "#00ffc3";
   ctx.fill();
 
   animationId = requestAnimationFrame(draw);
