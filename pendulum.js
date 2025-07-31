@@ -1,8 +1,25 @@
+const angleSlider = document.getElementById("angleSlider");
+const lengthSlider = document.getElementById("lengthSlider");
+
+let angle = (parseFloat(angleSlider.value) * Math.PI) / 180;
+let length = parseFloat(lengthSlider.value);
+
+angleSlider.addEventListener("input", () => {
+  angle = (parseFloat(angleSlider.value) * Math.PI) / 180;
+});
+
+lengthSlider.addEventListener("input", () => {
+  length = parseFloat(lengthSlider.value);
+});
+
 const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
 
-let angle, angleVel = 0, angleAcc = 0, length, gravity = 0.4;
-const origin = { x: canvas.width/2 , y: 50 };
+let angleVel = 0;
+let angleAcc = 0;
+let gravity = 0.4;
+
+const origin = { x: canvas.width / 2, y: 50 };
 let animationId;
 
 let isRunning = false;
