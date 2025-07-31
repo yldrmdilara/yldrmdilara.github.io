@@ -2,7 +2,7 @@ const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
 
 let angle, angleVel = 0, angleAcc = 0, length, gravity = 0.4;
-const origin = { x: 100, y: 50 };
+const origin = { x: 50, y: 50 };
 let animationId;
 
 let isRunning = false;
