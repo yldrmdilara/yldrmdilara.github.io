@@ -45,6 +45,7 @@ function startSimulation() {
   button.textContent = "Stop";
   draw();
 }
+document.getElementById("startButton").addEventListener("click", startSimulation);
 
 function draw() {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
