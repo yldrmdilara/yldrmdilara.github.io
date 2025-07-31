@@ -3,7 +3,6 @@ body{
   background: linear-gradient(to bottom, #fdfbfb, #ebedee);
   color: #000000;
   font-family: 'Inter', sans-serif;
-  display: flex;
   height: 100vh;
 }
 
